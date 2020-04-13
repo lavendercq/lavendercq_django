@@ -12,5 +12,5 @@ urlpatterns = {
     re_path(r"^sayhello/$", views.sayhello),
     re_path(r"^qs/$", views.qs),
     re_path(r"^post_body/$", views.post_body),
-    re_path(r"^weather/(?P<city>[a-z])/(?P<year>\d{4})/$", views.weather)
+    re_path(r"^weather/(?P<city>[a-z]+)/(?P<year>\d{4})/$", views.weather)
 }
